@@ -1,0 +1,74 @@
+@import "./reset", "./variables";
+
+body {
+  background-color: $main-background;
+}
+
+.container {
+  width: 33%;
+  margin: 100px auto;
+
+  & .row1 {
+    display: flex;
+    justify-content: space-between;
+    color: $White;
+  }
+
+  .row2 input[type="text"] {
+    width: 100%;
+    text-align: right;
+    padding: 20px;
+    font-size: $numbers-font-size;
+    margin: 30px 0px;
+    border-radius: 4px;
+    background-color: $screen-background;
+    color: $White;
+    border: none;
+  }
+
+  .container__one {
+    background-color: $toggle-background-keypad-background;
+    padding: 20px;
+    border-radius: 6px;
+  }
+  .row3 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 4%;
+
+    button {
+      font-size: $numbers-font-size;
+      width: 20%;
+      margin: 12px 0px;
+      border-radius: 6px;
+      border: none;
+      padding: 14px;
+      box-shadow: 0px 4px $Grayish-orange-key-shadow;
+    }
+
+    .key-background {
+      background-color: $key-background;
+      color: $White;
+      box-shadow: 0px 4px $Desaturated-dark-blue-key-shadow;
+    }
+
+    .red-key-background {
+      background-color: $red-key-background;
+      color: $White;
+      box-shadow: 0px 4px $dark-red-key-shadow;
+    }
+
+    .down {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      width: 100%;
+      margin: 8px 0px;
+
+      button {
+        width: 46%;
+      }
+    }
+  }
+}

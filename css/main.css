@@ -1,0 +1,70 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: hsl(222, 26%, 31%);
+}
+
+.container {
+  width: 33%;
+  margin: 100px auto;
+}
+.container .row1 {
+  display: flex;
+  justify-content: space-between;
+  color: hsl(0, 0%, 100%);
+}
+.container .row2 input[type=text] {
+  width: 100%;
+  text-align: right;
+  padding: 20px;
+  font-size: 32px;
+  margin: 30px 0px;
+  border-radius: 4px;
+  background-color: hsl(224, 36%, 15%);
+  color: hsl(0, 0%, 100%);
+  border: none;
+}
+.container .container__one {
+  background-color: hsl(223, 31%, 20%);
+  padding: 20px;
+  border-radius: 6px;
+}
+.container .row3 {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 4%;
+}
+.container .row3 button {
+  font-size: 32px;
+  width: 20%;
+  margin: 12px 0px;
+  border-radius: 6px;
+  border: none;
+  padding: 14px;
+  box-shadow: 0px 4px hsl(28, 16%, 65%);
+}
+.container .row3 .key-background {
+  background-color: hsl(225, 21%, 49%);
+  color: hsl(0, 0%, 100%);
+  box-shadow: 0px 4px hsl(224, 28%, 35%);
+}
+.container .row3 .red-key-background {
+  background-color: hsl(6, 63%, 50%);
+  color: hsl(0, 0%, 100%);
+  box-shadow: 0px 4px hsl(6, 70%, 34%);
+}
+.container .row3 .down {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 8px 0px;
+}
+.container .row3 .down button {
+  width: 46%;
+}/*# sourceMappingURL=main.css.map */
