@@ -32,34 +32,39 @@
     <div class="container">
       <div class="row1">
         <h2>calc</h2>
-        <button>buttton</button>
+        <div class="row1__right">
+          <p>theme</p>
+          <button>buttton</button>
+        </div>
       </div>
 
       <div class="row2">
-        <input type="text" name="display" />
+        <input type="text" name="display" id="result" />
       </div>
 
       <div class="container__one">
         <div class="row3">
-          <button>7</button>
-          <button>8</button>
-          <button>9</button>
-          <button class="key-background">DEL</button>
-          <button>4</button>
-          <button>5</button>
-          <button>6</button>
-          <button>+</button>
-          <button>1</button>
-          <button>2</button>
-          <button>3</button>
-          <button>-</button>
-          <button>.</button>
-          <button>0</button>
-          <button>/</button>
-          <button>*</button>
+          <button onclick="display(7)">7</button>
+          <button onclick="display(8)">8</button>
+          <button onclick="display(9)">9</button>
+          <button class="key-background" onclick="deleteResult()">DEL</button>
+          <button onclick="display(4)">4</button>
+          <button onclick="display(5)">5</button>
+          <button onclick="display(6)">6</button>
+          <button onclick="display('+')">+</button>
+          <button onclick="display(1)">1</button>
+          <button onclick="display(2)">2</button>
+          <button onclick="display(3)">3</button>
+          <button onclick="display('-')">-</button>
+          <button onclick="display('.')">.</button>
+          <button onclick="display(0)">0</button>
+          <button onclick="display('/')">/</button>
+          <button onclick="display('*')">*</button>
           <div class="down">
-            <button class="key-background">RESET</button>
-            <button class="red-key-background">=</button>
+            <button class="key-background" onclick="clearScreen()">
+              RESET
+            </button>
+            <button class="red-key-background" onclick="solve()">=</button>
           </div>
         </div>
       </div>
@@ -72,4 +77,5 @@
       >. Coded by <a href="#">Your Name Here</a>.
     </div>
   </body>
+  <script src="index.js"></script>
 </html>

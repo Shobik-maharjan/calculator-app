@@ -17,13 +17,20 @@ body {
   justify-content: space-between;
   color: hsl(0, 0%, 100%);
 }
+.container .row1__right {
+  display: flex;
+  align-items: center;
+}
+.container .row1__right p {
+  padding-right: 10px;
+}
 .container .row2 input[type=text] {
   width: 100%;
   text-align: right;
   padding: 20px;
-  font-size: 32px;
+  font-size: 20px;
   margin: 30px 0px;
-  border-radius: 4px;
+  border-radius: 8px;
   background-color: hsl(224, 36%, 15%);
   color: hsl(0, 0%, 100%);
   border: none;
@@ -31,7 +38,7 @@ body {
 .container .container__one {
   background-color: hsl(223, 31%, 20%);
   padding: 20px;
-  border-radius: 6px;
+  border-radius: 8px;
 }
 .container .row3 {
   display: flex;
@@ -40,13 +47,16 @@ body {
   gap: 4%;
 }
 .container .row3 button {
-  font-size: 32px;
+  font-size: 20px;
   width: 20%;
   margin: 12px 0px;
-  border-radius: 6px;
+  border-radius: 8px;
   border: none;
-  padding: 14px;
+  padding: 6px;
   box-shadow: 0px 4px hsl(28, 16%, 65%);
+}
+.container .row3 button:hover {
+  background-color: hsl(0, 0%, 54%);
 }
 .container .row3 .key-background {
   background-color: hsl(225, 21%, 49%);

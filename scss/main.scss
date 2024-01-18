@@ -7,11 +7,19 @@ body {
 .container {
   width: 33%;
   margin: 100px auto;
-
   & .row1 {
     display: flex;
     justify-content: space-between;
     color: $White;
+
+    &__right{
+      display: flex;
+      align-items: center;
+
+      p{
+        padding-right: 10px;
+      }
+    }
   }
 
   .row2 input[type="text"] {
@@ -20,7 +28,7 @@ body {
     padding: 20px;
     font-size: $numbers-font-size;
     margin: 30px 0px;
-    border-radius: 4px;
+    border-radius: 8px;
     background-color: $screen-background;
     color: $White;
     border: none;
@@ -29,7 +37,7 @@ body {
   .container__one {
     background-color: $toggle-background-keypad-background;
     padding: 20px;
-    border-radius: 6px;
+    border-radius: 8px;
   }
   .row3 {
     display: flex;
@@ -41,10 +49,14 @@ body {
       font-size: $numbers-font-size;
       width: 20%;
       margin: 12px 0px;
-      border-radius: 6px;
+      border-radius: 8px;
       border: none;
-      padding: 14px;
+      padding: 6px;
       box-shadow: 0px 4px $Grayish-orange-key-shadow;
+
+      &:hover{
+        background-color: hsl(0, 0%, 54%);
+      }
     }
 
     .key-background {
